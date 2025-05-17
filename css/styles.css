@@ -1,0 +1,254 @@
+/* Mobile Menu Styles */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Gallery Item Hover Effect */
+
+.gallery-item {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Form Validation Styles */
+
+.error {
+    border-color: #ef4444;
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+
+/* Gallery Styles */
+
+.gallery-container {
+    perspective: 1000px;
+}
+
+.gallery-item {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn {
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: #92400e;
+    color: white;
+}
+
+
+/* Lightbox Overrides */
+
+.lb-data .lb-caption {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.lb-nav a.lb-prev:hover,
+.lb-nav a.lb-next:hover {
+    opacity: 1;
+}
+
+
+/* Aspect ratio for gallery items */
+
+.gallery-item a::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    /* 1:1 aspect ratio */
+}
+
+
+/* Base Styles */
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.5;
+}
+
+
+/* Navigation */
+
+nav {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Mobile Menu */
+
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+.menu-overlay {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Blog Content */
+
+.blog-card {
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.blog-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Featured Post */
+
+.featured-post {
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* Newsletter Form */
+
+.newsletter-form input {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.newsletter-form button {
+    transition: background-color 0.2s ease;
+}
+
+
+/* Footer Links */
+
+footer a {
+    transition: color 0.2s ease;
+}
+
+
+/* Responsive Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Animation Keyframes */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Color Classes */
+
+.bg-amber-50 {
+    background-color: #fffbeb;
+}
+
+.bg-amber-100 {
+    background-color: #fef3c7;
+}
+
+.bg-amber-700 {
+    background-color: #b45309;
+}
+
+.bg-amber-800 {
+    background-color: #92400e;
+}
+
+.bg-amber-900 {
+    background-color: #78350f;
+}
+
+.text-amber-700 {
+    color: #b45309;
+}
+
+.text-amber-800 {
+    color: #92400e;
+}
+
+.border-amber-800 {
+    border-color: #92400e;
+}
+
+
+/* Add more color classes as needed */

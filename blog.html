@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Candles | Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-amber-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-semibold text-amber-800 text-lg">CandleCraft</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-amber-800 transition duration-300">Home</a>
+                    <a href="gallery.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-amber-800 transition duration-300">Gallery</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-amber-800 transition duration-300">Contact</a>
+                    <a href="blog.html" class="py-4 px-2 text-amber-800 border-b-4 border-amber-800 font-semibold">Blog</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button outline-none">
+                        <svg class="w-6 h-6 text-gray-500 hover:text-amber-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="flex justify-end p-4">
+            <button class="close-menu outline-none">
+                <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="px-4 py-2">
+            <li class="mb-2">
+                <a href="index.html" class="block py-2 px-4 text-amber-800 bg-amber-100 rounded font-semibold">Home</a>
+            </li>
+            <li class="mb-2">
+                <a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-amber-100 rounded">Gallery</a>
+            </li>
+            <li class="mb-2">
+                <a href="contact.html" class="block py-2 px-4 text-gray-700 hover:bg-amber-100 rounded">Contact</a>
+            </li>
+
+            <li class="mb-2">
+                <a href="blog.html" class="block py-2 px-4 text-gray-700 hover:bg-amber-100 rounded">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="pt-20 pb-12 px-4">
+        <div class="max-w-4xl mx-auto">
+            <!-- Blog Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-3xl md:text-4xl font-bold text-amber-800 mb-2">CandleCraft Blog</h1>
+                <p class="text-lg text-gray-600">Tips, stories, and updates from my candle making journey</p>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <a href="blog-post-1.html" class="block">
+                        <div class="relative pt-[56.25%] overflow-hidden bg-gray-100">
+                            <img src="images/blog1.jpg" alt="Pouring melted wax into candle jars" class="absolute top-0 left-0 w-full h-full object-cover transition duration-500 hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <time datetime="2023-05-15">May 15, 2023</time>
+                                <span class="mx-2">•</span>
+                                <span>5 min read</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-800 mb-2">The Art of Wax Pouring</h2>
+                            <p class="text-gray-600 mb-4">Learn my techniques for achieving the perfect wax pour every time, with smooth tops and even distribution.</p>
+                            <span class="inline-flex items-center text-amber-700 font-medium">
+                                Read More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <a href="blog-post-2.html" class="block">
+                        <div class="relative pt-[56.25%] overflow-hidden bg-gray-100">
+                            <img src="images/blog2.jpg" alt="Essential oils and fragrance bottles for candle making" class="absolute top-0 left-0 w-full h-full object-cover transition duration-500 hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <time datetime="2023-04-28">April 28, 2023</time>
+                                <span class="mx-2">•</span>
+                                <span>8 min read</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-800 mb-2">Mastering Scent Blending</h2>
+                            <p class="text-gray-600 mb-4">Discover how to create unique fragrance combinations that will make your candles stand out.</p>
+                            <span class="inline-flex items-center text-amber-700 font-medium">
+                                Read More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <a href="blog-post-3.html" class="block">
+                        <div class="relative pt-[56.25%] overflow-hidden bg-gray-100">
+                            <img src="images/blog3.jpg" alt="Organized candle making workspace with tools" class="absolute top-0 left-0 w-full h-full object-cover transition duration-500 hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <time datetime="2023-03-10">March 10, 2023</time>
+                                <span class="mx-2">•</span>
+                                <span>6 min read</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-800 mb-2">Setting Up Your Candle Workspace</h2>
+                            <p class="text-gray-600 mb-4">A tour of my efficient candle making setup with tips for organizing your own creative space.</p>
+                            <span class="inline-flex items-center text-amber-700 font-medium">
+                                Read More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <a href="blog-post-4.html" class="block">
+                        <div class="relative pt-[56.25%] overflow-hidden bg-gray-100">
+                            <img src="images/blog4.jpg" alt="Seasonal candles with autumn decorations" class="absolute top-0 left-0 w-full h-full object-cover transition duration-500 hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center text-sm text-gray-500 mb-2">
+                                <time datetime="2023-02-22">February 22, 2023</time>
+                                <span class="mx-2">•</span>
+                                <span>4 min read</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-800 mb-2">Creating Seasonal Scents</h2>
+                            <p class="text-gray-600 mb-4">How I develop candle fragrances that capture the essence of each season throughout the year.</p>
+                            <span class="inline-flex items-center text-amber-700 font-medium">
+                                Read More
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">CandleCraft</h3>
+                    <p class="mb-4">Handmade candles crafted with natural ingredients and attention to detail.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-amber-200 hover:text-white">Home</a></li>
+                        <li><a href="gallery.html" class="text-amber-200 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-amber-200 hover:text-white">Contact</a></li>
+                        <li><a href="blog.html" class="text-amber-200 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <address class="not-italic">
+                        <p class="mb-2">Email: <a href="mailto:contact@candlecraft.com" class="text-amber-200 hover:text-white">contact@candlecraft.com</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-amber-800 mt-8 pt-8 text-center text-amber-200">
+                <p>&copy; 2023 CandleCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
