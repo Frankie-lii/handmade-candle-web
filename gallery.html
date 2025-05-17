@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Candles | Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-amber-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-semibold text-amber-800 text-lg">CandleCraft</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-amber-800 border-b-4 border-amber-800 font-semibold">Home</a>
+                    <a href="gallery.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-amber-800 transition duration-300">Gallery</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-amber-800 transition duration-300">Contact</a>
+                    <a href="blog.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-amber-800 transition duration-300">Blog</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button outline-none">
+                        <svg class="w-6 h-6 text-gray-500 hover:text-amber-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="flex justify-end p-4">
+            <button class="close-menu outline-none">
+                <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="px-4 py-2">
+            <li class="mb-2">
+                <a href="index.html" class="block py-2 px-4 text-amber-800 bg-amber-100 rounded font-semibold">Home</a>
+            </li>
+            <li class="mb-2">
+                <a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-amber-100 rounded">Gallery</a>
+            </li>
+            <li class="mb-2">
+                <a href="contact.html" class="block py-2 px-4 text-gray-700 hover:bg-amber-100 rounded">Contact</a>
+            </li>
+
+            <li class="mb-2">
+                <a href="blog.html" class="block py-2 px-4 text-gray-700 hover:bg-amber-100 rounded">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="pt-16 pb-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-amber-800 mb-2">Candle Gallery</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Browse through my collection of handmade candles</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button class="filter-btn px-4 py-2 rounded-full bg-amber-800 text-white" data-filter="all">All</button>
+                <button class="filter-btn px-4 py-2 rounded-full bg-amber-100 text-amber-800" data-filter="jar">Jar Candles</button>
+                <button class="filter-btn px-4 py-2 rounded-full bg-amber-100 text-amber-800" data-filter="pillar">Pillar Candles</button>
+                <button class="filter-btn px-4 py-2 rounded-full bg-amber-100 text-amber-800" data-filter="seasonal">Seasonal</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Candle 1 -->
+                <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden" data-category="jar">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/candle1.jpg" alt="Vanilla Soy Candle" class="w-full h-full object-cover transition duration-300 hover:scale-105">
+                        <button class="absolute inset-0 w-full h-full flex items-center justify-center bg-black bg-opacity-0 hover:bg-opacity-20 transition duration-300">
+                            <svg class="w-12 h-12 text-white opacity-0 hover:opacity-100 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Vanilla Soy Candle</h3>
+                        <p class="text-amber-700">16oz Glass Jar</p>
+                    </div>
+                </div>
+
+                <!-- Candle 2 -->
+                <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden" data-category="pillar">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/candle2.jpg" alt="Lavender Beeswax Candle" class="w-full h-full object-cover transition duration-300 hover:scale-105">
+                        <button class="absolute inset-0 w-full h-full flex items-center justify-center bg-black bg-opacity-0 hover:bg-opacity-20 transition duration-300">
+                            <svg class="w-12 h-12 text-white opacity-0 hover:opacity-100 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Lavender Beeswax Candle</h3>
+                        <p class="text-amber-700">8" Pillar</p>
+                    </div>
+                </div>
+
+                <!-- Candle 3 -->
+                <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden" data-category="seasonal">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/candle3.jpg" alt="Spiced Pumpkin Candle" class="w-full h-full object-cover transition duration-300 hover:scale-105">
+                        <button class="absolute inset-0 w-full h-full flex items-center justify-center bg-black bg-opacity-0 hover:bg-opacity-20 transition duration-300">
+                            <svg class="w-12 h-12 text-white opacity-0 hover:opacity-100 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Spiced Pumpkin Candle</h3>
+                        <p class="text-amber-700">Seasonal Limited Edition</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">CandleCraft</h3>
+                    <p class="mb-4">Handmade candles crafted with natural ingredients and attention to detail.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-amber-200 hover:text-white">Home</a></li>
+                        <li><a href="gallery.html" class="text-amber-200 hover:text-white">Gallery</a></li>
+                        <li><a href="contact.html" class="text-amber-200 hover:text-white">Contact</a></li>
+                        <li><a href="blog.html" class="text-amber-200 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <address class="not-italic">
+                        <p class="mb-2">Email: <a href="mailto:contact@candlecraft.com" class="text-amber-200 hover:text-white">contact@candlecraft.com</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-amber-800 mt-8 pt-8 text-center text-amber-200">
+                <p>&copy; 2023 CandleCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
